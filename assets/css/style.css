@@ -731,7 +731,7 @@ header {
 /****************************** page styles ******************************/
 /**************** Hero Section Start *******************/
 .hero-area {
-  background: url("../../../assets/images/hero-banner.jpg");
+  background: url("../../assets/images/hero-banner.jpg");
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: cover;
