@@ -11,12 +11,12 @@ h5,
 h6,
 .h6 {
   font-weight: 700;
-  color: var(--headings-color);
+  color: $headings-color;
 }
 
 h1,
 .h1 {
-  font-size: 64px;
+  font-size: 72px;
 }
 
 @media (max-width: 767.98px) {

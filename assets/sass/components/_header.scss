@@ -1,8 +1,11 @@
 header {
-  padding: 20px 0;
-  background-color: #3f3c6a;
+  background-color: transparent;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
   .top {
-    padding: 0 10px;
+    padding: 24px 10px;
     @extend .flex-center-between;
     .info-left {
       width: 65%;
@@ -24,7 +27,7 @@ header {
 
         &__button {
           display: flex;
-          gap: 20px;
+          gap: 5px;
           align-items: center;
           background-color: transparent;
           border: none;
@@ -43,6 +46,7 @@ header {
         }
 
         &__list {
+          width: 95px;
           position: absolute;
           top: 100%;
           left: 0;
@@ -54,9 +58,6 @@ header {
           border-radius: 5px;
           display: none;
           max-height: 700px;
-          // max-height: 200px;
-          // overflow-y: scroll;
-          box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
           z-index: 10;
 
           &.open {
@@ -87,7 +88,7 @@ header {
           transform: translateY(-50%);
           width: 1px;
           height: 17px;
-          background-color: var(--text-color);
+          background-color: $text-color;
         }
         a {
           color: $text-color;
@@ -119,6 +120,7 @@ header {
         align-items: center;
         li {
           padding: 0 16px;
+          position: relative;
           a {
             display: flex;
             font-weight: 600;
@@ -134,7 +136,7 @@ header {
               height: 2px;
               background: $primary-color;
               left: 50%;
-              bottom: 20px;
+              bottom: 25px;
               transition: 0.3s;
             }
 
@@ -150,9 +152,52 @@ header {
               }
             }
           }
+
+          &:hover .dropdown-menu {
+            opacity: 1 !important;
+            visibility: visible !important;
+            transform: translateY(0px);
+          }
+
+          .dropdown-menu {
+            opacity: 0;
+            visibility: hidden;
+            padding: 6px 0 6px 0;
+            background: $white-color;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: left;
+            min-width: 220px;
+            box-shadow: $box-shadow;
+            transform: translateY(20px);
+            transition: transform 0.3s ease, opacity 0.3s ease;
+            li {
+              align-self: flex-start;
+              padding: 0 0 0 24px;
+              a {
+                color: $text-color;
+                padding: 10px 0;
+                text-align: left;
+                font-weight: 600;
+                &:hover {
+                  margin-left: 10px;
+                  &::after {
+                    left: -20px;
+                    top: 49%;
+                    width: 10px;
+                    height: 2px;
+                  }
+                }
+              }
+            }
+          }
         }
       }
     }
+
     .right-btn {
       display: flex;
       align-items: center;

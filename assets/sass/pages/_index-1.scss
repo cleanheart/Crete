@@ -1,0 +1,45 @@
+/**************** Hero Section Start *******************/
+
+.hero-area {
+  background: url("../../../assets/images/hero-banner.jpg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+  padding-top: 350px;
+
+  .content-wrapper {
+    display: flex;
+
+    .left {
+      padding-bottom: 215px;
+      width: 50%;
+      .sub-title {
+        border-bottom: 1px solid $white-color;
+        padding-bottom: 6px;
+      }
+      .title {
+        margin: 24px 0 32px 0;
+      }
+      .description {
+        font-size: 18px;
+        line-height: 28px;
+        font-weight: 500;
+      }
+      .btn-wrapper {
+        display: flex;
+        gap: 20px;
+        margin-top: 60px;
+      }
+    }
+    .right {
+      width: 50%;
+      position: relative;
+
+      .img-wrapper {
+        position: absolute;
+        bottom: 0;
+      }
+    }
+  }
+}
+/**************** Hero Section Start *******************/

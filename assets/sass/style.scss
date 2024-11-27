@@ -16,12 +16,12 @@ Version: 1.1.1
 
 /******************************* theme css **********************************/
 @import "theme/theme-class";
-@import 'theme/preloader';
-@import 'theme/animations';
+@import "theme/preloader";
+@import "theme/animations";
 
 /******************************** components ******************************/
 @import "components/header";
 @import "components/button";
 
 /****************************** page styles ******************************/
-// @import 'pages/index-1';
+@import "pages/index-1";

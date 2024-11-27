@@ -3,58 +3,48 @@
   max-width: 1304px;
 }
 .primary-bg-color {
-  background-color: var(--primary-color) !important;
+  background-color: $primary-color !important;
 }
 
 .primary-text-color {
-  color: var(--primary-color);
+  color: $primary-color;
 }
 
 .primary-bg-light {
-  background-color: var(--primary-light);
+  background-color: $primary-light;
 }
 
 .spacer {
-  background-color: var(--border-color);
+  background-color: $border-color;
   height: 1px;
 }
 
 .dark-bg-color {
-  background-color: var(--headings-color);
+  background-color: $headings-color;
 }
 
 .text-gray {
-  color: var(--gray-color);
+  color: $gray-color;
 }
 
 .theme-shadow {
-  box-shadow: var(--box-shadow);
+  box-shadow: $box-shadow;
 }
 
 .text-color {
-  color: var(--text-color);
+  color: $text-color;
 }
 
 .light-bg {
-  background-color: var(--light-bg);
-}
-
-.theme-input {
-  width: 100%;
-  padding: 24px 25px;
-  border-radius: 15px;
-  border: 1px solid var(--light-stroke);
-  outline: 0;
-  color: var(--headings-color);
-  transition: var(--transition-base);
+  background-color: $light-bg;
 }
 
 .theme-input::placeholder {
-  color: var(--text-color);
+  color: $text-color;
 }
 
 .theme-input:focus {
-  border-color: var(--primary-color);
+  border-color: $primary-color;
 }
 
 .z-2 {
@@ -70,7 +60,7 @@
 }
 
 .bg-light-white {
-  background-color: var(--light-white);
+  background-color: $light-white;
 }
 .text-white {
   color: $white-color;
