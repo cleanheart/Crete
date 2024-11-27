@@ -1,0 +1,11 @@
+.transparent-header {
+  background: transparent;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0; }
+  .transparent-header .header-top {
+    background: #fdfdfd;
+    -webkit-box-shadow: 0px 1px 0px #f1f1f1;
+    box-shadow: 0px 1px 0px #f1f1f1;
+    border-radius: 10px 10px 0px 0px; }

@@ -1,0 +1,27 @@
+/*
+Theme Name: Crete - SCSS Template
+Author:...
+Author URI: https:...
+Tags: portfolio, agency, personal, blog, html5 template, portfolio template
+Description: Crete - Personal Portfolio HTML5 Template. 
+Version: 1.1.1
+*/
+
+/************************************** base css **************************************/
+@import "base/variables";
+@import "base/mixin";
+@import "base/reset";
+@import "base/typography";
+@import "base/spacing";
+
+/******************************* theme css **********************************/
+@import "theme/theme-class";
+@import 'theme/preloader';
+@import 'theme/animations';
+
+/******************************** components ******************************/
+@import "components/header";
+@import "components/button";
+
+/****************************** page styles ******************************/
+// @import 'pages/index-1';

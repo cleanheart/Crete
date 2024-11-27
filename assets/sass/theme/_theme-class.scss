@@ -1,0 +1,98 @@
+/******************************* theme css **********************************/
+.container {
+  max-width: 1304px;
+}
+.primary-bg-color {
+  background-color: var(--primary-color) !important;
+}
+
+.primary-text-color {
+  color: var(--primary-color);
+}
+
+.primary-bg-light {
+  background-color: var(--primary-light);
+}
+
+.spacer {
+  background-color: var(--border-color);
+  height: 1px;
+}
+
+.dark-bg-color {
+  background-color: var(--headings-color);
+}
+
+.text-gray {
+  color: var(--gray-color);
+}
+
+.theme-shadow {
+  box-shadow: var(--box-shadow);
+}
+
+.text-color {
+  color: var(--text-color);
+}
+
+.light-bg {
+  background-color: var(--light-bg);
+}
+
+.theme-input {
+  width: 100%;
+  padding: 24px 25px;
+  border-radius: 15px;
+  border: 1px solid var(--light-stroke);
+  outline: 0;
+  color: var(--headings-color);
+  transition: var(--transition-base);
+}
+
+.theme-input::placeholder {
+  color: var(--text-color);
+}
+
+.theme-input:focus {
+  border-color: var(--primary-color);
+}
+
+.z-2 {
+  z-index: 2;
+}
+
+.z-5 {
+  z-index: 5;
+}
+
+.z--1 {
+  z-index: -1;
+}
+
+.bg-light-white {
+  background-color: var(--light-white);
+}
+.text-white {
+  color: $white-color;
+}
+.flex-center-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+}
+.flex-align-center {
+  display: flex;
+  align-items: center;
+}
+.fs-sm {
+  font-size: 14px;
+}
