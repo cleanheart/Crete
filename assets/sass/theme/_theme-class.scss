@@ -1,6 +1,7 @@
 /******************************* theme css **********************************/
 .container {
   max-width: 1304px;
+  padding: 0 10px;
 }
 .primary-bg-color {
   background-color: $primary-color !important;
@@ -12,6 +13,7 @@
 
 .primary-bg-light {
   background-color: $primary-light;
+  padding: 0 5px;
 }
 
 .spacer {
@@ -85,4 +87,7 @@
 }
 .fs-sm {
   font-size: 14px;
+}
+.ft-600 {
+  font-weight: 600;
 }

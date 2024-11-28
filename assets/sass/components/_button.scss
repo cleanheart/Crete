@@ -4,11 +4,14 @@
   font-weight: bold;
   text-transform: uppercase;
   position: relative;
-  display: inline-block;
   z-index: 1;
   border-radius: 12px;
   overflow: hidden;
   transition: all 0.3s;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 9px;
 }
 .primary-btn {
   background-color: $primary-color;
@@ -28,6 +31,80 @@
   }
   &:hover {
     background-color: transparent;
+    &::before {
+      top: -10px;
+    }
+  }
+}
+.white-btn {
+  background-color: $white-color;
+  color: $primary-color;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: -90px;
+    top: -135%;
+    width: 190%;
+    height: 135%;
+    background-color: $primary-color;
+    z-index: -1;
+    border-radius: 50%;
+    transition: all 0.3s;
+  }
+  &:hover {
+    background-color: transparent;
+    color: $white-color;
+    &::before {
+      top: -10px;
+    }
+  }
+}
+.border-btn {
+  background-color: transparent;
+  color: $white-color;
+  border: 1px solid $white-color;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: -90px;
+    top: -135%;
+    width: 190%;
+    height: 135%;
+    background-color: $headings-color;
+    z-index: -1;
+    border-radius: 50%;
+    transition: all 0.3s;
+  }
+  &:hover {
+    background-color: transparent;
+    color: $white-color;
+    border: 1px solid $headings-color;
+    &::before {
+      top: -10px;
+    }
+  }
+}
+.secondery-btn {
+  color: $primary-color;
+  background-color: $primary-light;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: -90px;
+    top: -135%;
+    width: 190%;
+    height: 135%;
+    background-color: $headings-color;
+    z-index: -1;
+    border-radius: 50%;
+    transition: all 0.3s;
+  }
+  &:hover {
+    background-color: transparent;
+    color: $white-color;
     &::before {
       top: -10px;
     }

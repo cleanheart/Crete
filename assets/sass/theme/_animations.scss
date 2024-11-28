@@ -1,16 +1,43 @@
 @keyframes toLeftFromRight {
   49% {
-    -webkit-transform: translateX(-100%);
     transform: translateX(-100%);
   }
 
   50% {
     opacity: 0;
-    -webkit-transform: translateX(100%);
     transform: translateX(100%);
   }
 
   51% {
     opacity: 1;
+  }
+}
+@keyframes ups-down {
+  0% {
+    transform: translateY(0);
+  }
+
+  25% {
+    transform: translateY(-30px);
+  }
+
+  50% {
+    transform: translateY(0);
+  }
+
+  75% {
+    transform: translateY(30px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes custom-rotate {
+  1% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
