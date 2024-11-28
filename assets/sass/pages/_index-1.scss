@@ -17,6 +17,9 @@
     left: -100px;
     top: -190px;
     border-radius: 50%;
+    @include screen-992 {
+      display: none;
+    }
   }
 
   .shape-2 {
@@ -28,6 +31,7 @@
     left: -130px;
     bottom: 230px;
     border-radius: 50%;
+    transition: 0.3s;
   }
   .shape-3 {
     position: absolute;
@@ -37,9 +41,41 @@
     background-color: rgba(220, 221, 253, 0.6);
     right: 190px;
     top: 290px;
+    transition: 0.3s;
+
     border-radius: 50%;
     @include screen-992 {
       display: none;
+    }
+  }
+  .shape-4 {
+    position: absolute;
+    z-index: 1;
+    width: 70px;
+    height: 70px;
+    background-color: #b6dcfd;
+    border-radius: 50%;
+    right: 130px;
+    bottom: 35%;
+    transition: 0.3s;
+
+    @include screen-992 {
+      display: inline;
+    }
+  }
+  .shape-5 {
+    position: absolute;
+    z-index: 1;
+    width: 19px;
+    height: 19px;
+    background-color: #ffdf6f;
+    border-radius: 50%;
+    right: 160px;
+    bottom: 60%;
+    transition: 0.3s;
+
+    @include screen-992 {
+      display: inline;
     }
   }
   .bulb-img {
@@ -48,13 +84,19 @@
     left: 60%;
     top: 25%;
     animation: 6s ups-down linear infinite;
+    @include screen-992 {
+      display: none;
+    }
   }
   .circle-img {
     position: absolute;
     z-index: 2;
     right: 6%;
     top: 18%;
-    animation: 5s custom-rotate linear infinite;
+    transition: 0.3s;
+    @include screen-992 {
+      display: none;
+    }
   }
   .content-wrapper {
     display: flex;
@@ -89,11 +131,15 @@
       z-index: 3;
       width: 50%;
       position: relative;
-      overflow-x: hidden;
 
       .img-wrapper {
         position: absolute;
         bottom: 0;
+        .image-2 {
+          display: none;
+          max-width: 100% !important;
+          height: auto;
+        }
       }
     }
   }
@@ -111,6 +157,12 @@
         width: 100%;
         .img-wrapper {
           position: inherit;
+          .image-1 {
+            display: none;
+          }
+          .image-2 {
+            display: inline-block;
+          }
         }
       }
     }
@@ -124,6 +176,9 @@
         }
       }
     }
+  }
+  @include portrait-phone {
+    overflow: visible !important;
   }
 }
 /**************** Hero Section Start *******************/

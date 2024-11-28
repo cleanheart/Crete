@@ -15,36 +15,6 @@
   </head>
   <body>
     <!--prealoder start-->
-    <div class="preloader">
-      <div class="loader">
-        <svg
-          class="pl"
-          viewBox="0 0 128 128"
-          width="128px"
-          height="128px"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <g
-            fill="none"
-            stroke-linecap="round"
-            stroke-width="16"
-            transform="rotate(-90,64,64)"
-          >
-            <circle class="pl__ring" r="56" cx="64" cy="64" stroke="#ddd" />
-            <circle
-              class="pl__worm pl__worm--moving"
-              r="56"
-              cx="64"
-              cy="64"
-              stroke="currentColor"
-              stroke-dasharray="22 307.86 22"
-              data-worm
-            />
-          </g>
-          <g data-particles></g>
-        </svg>
-      </div>
-    </div>
     <!-- Header Section start Hare -->
     <header>
       <div class="container">
@@ -187,7 +157,13 @@
                 <span></span>
                 <span></span>
               </button>
-              <button type="button " class="menu-toggle mobile-btn">
+              <button
+                type="button"
+                class="menu-toggle mobile-btn"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#mobileMenuOffcanvas"
+                aria-controls="mobileMenuOffcanvas"
+              >
                 <span></span>
                 <span></span>
                 <span></span>
@@ -199,7 +175,6 @@
     </header>
     <!-- Header Section End Hare -->
     <!-- off canvas area -->
-    <!-- Offcanvas -->
     <div
       class="offcanvas offcanvas-end"
       tabindex="-1"
@@ -222,8 +197,9 @@
             <img src="assets/images/new-logo.png" alt="logo" />
           </a>
           <p class="mb-0 mt-32 fw-light">
-            Distrak Street 2SK Line, Germany galore@inside-support.com (+125)
-            2156-2145
+            Distrak Street 2SK Line, <br />
+            Germanygalore@inside-support.com <br />
+            (+125) 2156-2145
           </p>
         </div>
         <div class="offcanvas-gallery d-flex align-items-center flex-wrap">
@@ -254,9 +230,7 @@
               placeholder="Enter your e-mail"
               class="form-control"
             />
-            <button type="submit" class="btn btn-primary mt-3 w-100">
-              SUBSCRIBE NOW
-            </button>
+            <a class="template-btn primary-btn" href="#">SUBSCRIBE NOW</a>
           </form>
         </div>
         <div
@@ -269,19 +243,19 @@
                 class="btn dropdown-toggle"
                 data-bs-toggle="dropdown"
               >
-                <img src="assets/images/icons/flag-usa.png" alt="flag" />
+                <img src="assets/images/flag-usa.png" alt="flag" />
                 English
               </button>
               <ul class="dropdown-menu">
                 <li>
                   <a href="#"
-                    ><img src="assets/images/icons/flag-bd.jpg" alt="flag" />
+                    ><img src="assets/images/flag-bd.jpg" alt="flag" />
                     Bangla</a
                   >
                 </li>
                 <li>
                   <a href="#"
-                    ><img src="assets/images/icons/flag-india.jpg" alt="flag" />
+                    ><img src="assets/images/flag-india.jpg" alt="flag" />
                     Hindi</a
                   >
                 </li>
@@ -296,14 +270,110 @@
         </div>
       </div>
     </div>
-
+    <!--Mobile menu with Offcanvas-->
+    <div
+      class="offcanvas offcanvas-mobile offcanvas-start"
+      tabindex="-1"
+      id="mobileMenuOffcanvas"
+      aria-labelledby="mobileMenuLabel"
+    >
+      <div class="offcanvas-header">
+        <button
+          type="button"
+          class="btn-close text-reset"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <a href="#" class="logo">
+          <img src="assets/images/logo-white.png" alt="" />
+        </a>
+        <div class="mobile-menu">
+          <ul>
+            <li>
+              <a href="#"
+                >Home
+                <span class="icon"
+                  ><i class="fa-solid fa-angle-down"></i>
+                </span>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="#">home 1</a></li>
+                <li><a href="#">home 2</a></li>
+                <li><a href="#">home 3</a></li>
+                <li><a href="#">home 4</a></li>
+                <li><a href="#">home 5</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">about</a>
+            </li>
+            <li>
+              <a href="#"
+                >project
+                <span class="icon"
+                  ><i class="fa-solid fa-angle-down"></i>
+                </span>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="#">project</a></li>
+                <li><a href="#">project deteils</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#"
+                >pages
+                <span class="icon"
+                  ><i class="fa-solid fa-angle-down"></i>
+                </span>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="/services">Services</a></li>
+                <li><a href="/service-details">Service Details</a></li>
+                <li><a href="/team">Our Team</a></li>
+                <li><a href="/team-details">Team Details</a></li>
+                <li><a href="/faq">Faq</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#"
+                >blog
+                <span class="icon"
+                  ><i class="fa-solid fa-angle-down"></i>
+                </span>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="/blog-list">Blog List</a></li>
+                <li><a href="/blog-single">Blog Details</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">contact </a>
+            </li>
+          </ul>
+        </div>
+        <div class="from-wrapper">
+          <form action="">
+            <input type="search" placeholder="Search..." />
+          </form>
+          <a class="template-btn primary-btn" href="#">go</a>
+        </div>
+      </div>
+    </div>
     <!--**************** Hero Section Start *******************-->
     <section class="hero-area">
       <span class="shape-1"></span>
-      <span class="shape-2"></span>
-      <span class="shape-3"></span>
+      <span class="shape-2 move-shape"></span>
+      <span class="shape-3 move-shape"></span>
+      <span class="shape-4 move-shape"></span>
+      <span class="shape-5 move-shape"></span>
       <img src="assets/images/bulb.png" class="bulb-img" alt="" />
-      <img src="assets/images/percent.png" class="circle-img" alt="" />
+      <img
+        src="assets/images/percent.png"
+        class="circle-img move-shape"
+        alt=""
+      />
       <div class="container">
         <div class="content-wrapper">
           <div class="left">
@@ -327,7 +397,8 @@
           </div>
           <div class="right">
             <div class="img-wrapper">
-              <img src="assets/images/hero-right.png" alt="" />
+              <img class="image-1" src="assets/images/hero-right.png" alt="" />
+              <img class="image-2" src="assets/images/hero-sm.png " alt="" />
             </div>
           </div>
         </div>

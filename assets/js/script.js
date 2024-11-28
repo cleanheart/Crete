@@ -1,6 +1,7 @@
 /*
         // 1. lang change
         // 2. preloader 
+        // 3. mobile menu show-hide
     */
 /********* 1-lang change **********/
 const langDropdownButton = document.getElementById("langDropdownButton");
@@ -55,3 +56,21 @@ $(window).on("load", function () {
   $(".preloader").fadeOut();
 });
 /////////////////////////////////////
+// Select all shapes with the class "move-shape"
+const shapes = document.querySelectorAll(".move-shape");
+
+// Scroll event listener
+window.addEventListener("scroll", () => {
+  // Current scroll position
+  const scrollY = window.scrollY;
+
+  // Iterate through each shape
+  shapes.forEach((shape, index) => {
+    // Calculate movement (maximum 50px)
+    const movement = Math.sin(scrollY * 0.01 + index) * 100;
+
+    // Apply movement with transform
+    shape.style.transform = `translateY(${movement}px)`;
+  });
+});
+//////////////////////////
