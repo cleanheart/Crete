@@ -1,11 +1,28 @@
 $(function () {
   //////////
   /*
-        // 1. lang change
-        // 2. preloader 
+
+        // 1. Scroll top button
+        // 2. 2-lang change
+        // 3. preloader 
         // 3. mobile menu show-hide
     */
-  /********* 1-lang change **********/
+
+  //1. Scroll top button
+  $(window).on("scroll", function () {
+    var scrollBar = $(this).scrollTop();
+    if (scrollBar > 150) {
+      $(".scroll-top-btn").fadeIn();
+    } else {
+      $(".scroll-top-btn").fadeOut();
+    }
+  });
+  $(".scroll-top-btn").on("click", function () {
+    $("body,html").animate({
+      scrollTop: 0,
+    });
+  });
+  /********* 2-lang change **********/
   const langDropdownButton = document.getElementById("langDropdownButton");
   const langDropdownList = document.getElementById("langDropdownList");
   const langDropdownText = document.getElementById("langDropdownText");
@@ -52,11 +69,12 @@ $(function () {
       langDropdownIcon.innerHTML = '<i class="fa-solid fa-angle-down"></i>';
     }
   });
-
-  // 2. preloader
-  $(window).on("load", function () {
-    $(".preloader").fadeOut();
+  // 3. Preloder
+  // Hide Preloader after page loads
+  window.addEventListener("load", function () {
+    document.querySelector(".preloader").style.display = "none";
   });
+
   /////////////////////////////////////
   const shapes = document.querySelectorAll(".move-shape");
 

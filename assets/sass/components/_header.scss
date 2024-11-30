@@ -254,12 +254,26 @@ header {
   width: 100%;
   z-index: 10;
   animation: 1s custom-fadeInDown;
-  .top {
-    display: none !important;
+  background-color: $white-color;
+  .container {
+    max-width: 100%;
+    padding: 0;
+    background-color: $white-color;
+    box-shadow: $box-shadow;
+
+    .content-wrapper {
+      max-width: 1320px;
+      margin: 0 auto;
+      .top {
+        display: none !important;
+      }
+      .bottom {
+        border-radius: 0;
+        box-shadow: none;
+      }
+    }
   }
 }
-
-///////////// Header Sticky
 
 /* Offcanvas Styling */
 .offcanvas {

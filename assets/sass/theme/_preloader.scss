@@ -1,14 +1,64 @@
-/******************** preloader ******************/
+// Variables for colors and sizes
+// $primary-color: #5044eb;
+// $secondary-color: #737373;
+$bg-color: #f4f4f4;
+
+$circle-size-large: 80px;
+$circle-size-small: 60px;
+$border-width: 10px;
+
+// Preloader Container Styling
 .preloader {
   position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 1000;
-  background-color: $white-color;
-  display: flex;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: 100vh;
-  justify-content: center;
+  height: 100%;
+  background-color: $bg-color;
+  display: flex;
   align-items: center;
+  justify-content: center;
+  z-index: 9999;
+
+  .circle1,
+  .circle2 {
+    border: $border-width solid transparent;
+    border-radius: 50%;
+    position: absolute;
+  }
+
+  // Circle 1 Animation
+  .circle1 {
+    width: $circle-size-large;
+    height: $circle-size-large;
+    border-top: $border-width solid $primary-color;
+    animation: spin 1.5s linear infinite;
+  }
+
+  // Circle 2 Animation
+  .circle2 {
+    width: $circle-size-small;
+    height: $circle-size-small;
+    border-top: $border-width solid $secondary-color;
+    animation: spinReverse 1.5s linear infinite;
+  }
+}
+
+// Animation Keyframes
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spinReverse {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
 }

@@ -117,6 +117,9 @@
   padding-bottom: 6px;
   display: inline;
 }
+.fs-md {
+  font-size: 16px;
+}
 .fs-20 {
   font-size: 20px;
 }
@@ -127,4 +130,15 @@
       margin: 0 12px;
     }
   }
+}
+.scroll-top-btn {
+  width: 40px;
+  height: 40px;
+  background-color: $primary-color;
+  color: $white-color;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 10;
+  border-radius: 6px;
 }
