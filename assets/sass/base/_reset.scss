@@ -4,6 +4,7 @@ body {
   color: $text-color;
   background-color: $white-color;
   font-weight: 400;
+  box-sizing: border-box;
 }
 
 input {

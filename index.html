@@ -9,17 +9,17 @@
 
     <link rel="stylesheet" href="assets/css/all.css" />
     <link rel="stylesheet" href="assets/css/bootstrap.css" />
-    <link rel="stylesheet" href="assets/css/animate.css" />
+    <link rel="stylesheet" href="assets/css/animate.min.css" />
     <link rel="stylesheet" href="assets/css/slick.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
     <!--prealoder start-->
     <!-- Header Section start Hare -->
-    <header>
+    <header class="header-sticky">
       <div class="container">
         <div class="content-wrapper">
-          <div class="top">
+          <div class="top wow animate__animated animate__fadeInDown">
             <div class="info-left">
               <a href="tel:1044123456789" class="text-white fs-sm"
                 ><span class="mr-8"><i class="fa-solid fa-phone"></i></span
@@ -89,7 +89,7 @@
                       ><i class="fa-solid fa-angle-down"></i>
                     </span>
                   </a>
-                  <ul class="dropdown-menu">
+                  <ul class="main-dropdown-menu">
                     <li><a href="#">home 1</a></li>
                     <li><a href="#">home 2</a></li>
                     <li><a href="#">home 3</a></li>
@@ -107,7 +107,7 @@
                       ><i class="fa-solid fa-angle-down"></i>
                     </span>
                   </a>
-                  <ul class="dropdown-menu">
+                  <ul class="main-dropdown-menu">
                     <li><a href="#">project</a></li>
                     <li><a href="#">project deteils</a></li>
                   </ul>
@@ -119,7 +119,7 @@
                       ><i class="fa-solid fa-angle-down"></i>
                     </span>
                   </a>
-                  <ul class="dropdown-menu">
+                  <ul class="main-dropdown-menu">
                     <li><a href="/services">Services</a></li>
                     <li><a href="/service-details">Service Details</a></li>
                     <li><a href="/team">Our Team</a></li>
@@ -134,7 +134,7 @@
                       ><i class="fa-solid fa-angle-down"></i>
                     </span>
                   </a>
-                  <ul class="dropdown-menu">
+                  <ul class="main-dropdown-menu">
                     <li><a href="/blog-list">Blog List</a></li>
                     <li><a href="/blog-single">Blog Details</a></li>
                   </ul>
@@ -175,101 +175,109 @@
     </header>
     <!-- Header Section End Hare -->
     <!-- off canvas area -->
-    <div
-      class="offcanvas offcanvas-end"
-      tabindex="-1"
-      id="offcanvasMenu1"
-      aria-labelledby="offcanvasMenu1Label"
-    >
-      <div class="offcanvas-header">
-        <a
-          href="javascript:void(0)"
-          class="offcanvas-close"
-          data-bs-dismiss="offcanvas"
-          aria-label="Close"
-        >
-          <i class="fa-solid fa-xmark"></i>
-        </a>
-      </div>
-      <div class="offcanvas-body">
-        <div class="content-top">
-          <a class="offcanvas-logo" href="/">
-            <img src="assets/images/new-logo.png" alt="logo" />
-          </a>
-          <p class="mb-0 mt-32 fw-light">
-            Distrak Street 2SK Line, <br />
-            Germanygalore@inside-support.com <br />
-            (+125) 2156-2145
-          </p>
-        </div>
-        <div class="offcanvas-gallery d-flex align-items-center flex-wrap">
-          <a href="#"
-            ><img src="assets/images/gallery-1.jpg" alt="not found"
-          /></a>
-          <a href="#"
-            ><img src="assets/images/gallery-2.jpg" alt="not found"
-          /></a>
-          <a href="#"
-            ><img src="assets/images/gallery-3.jpg" alt="not found"
-          /></a>
-          <a href="#"
-            ><img src="assets/images/gallery-4.jpg" alt="not found"
-          /></a>
-          <a href="#"
-            ><img src="assets/images/gallery-5.jpg" alt="not found"
-          /></a>
-          <a href="#"
-            ><img src="assets/images/gallery-6.jpg" alt="not found"
-          /></a>
-        </div>
-        <div class="offcanvas-newsletter">
-          <h6 class="text-center">Newsletter</h6>
-          <form action="#">
-            <input
-              type="email"
-              placeholder="Enter your e-mail"
-              class="form-control"
-            />
-            <a class="template-btn primary-btn" href="#">SUBSCRIBE NOW</a>
-          </form>
-        </div>
-        <div
-          class="offcanvas-bottom d-flex align-items-center justify-content-between"
-        >
-          <div class="language-switcher">
-            <div class="dropdown">
-              <button
-                type="button"
-                class="btn dropdown-toggle"
-                data-bs-toggle="dropdown"
+    <section class="section-name">
+      <div class="container">
+        <div class="content-wrapper">
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasMenu1"
+            aria-labelledby="offcanvasMenu1Label"
+          >
+            <div class="offcanvas-header">
+              <a
+                href="javascript:void(0)"
+                class="offcanvas-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
               >
-                <img src="assets/images/flag-usa.png" alt="flag" />
-                English
-              </button>
-              <ul class="dropdown-menu">
-                <li>
-                  <a href="#"
-                    ><img src="assets/images/flag-bd.jpg" alt="flag" />
-                    Bangla</a
+                <i class="fa-solid fa-xmark"></i>
+              </a>
+            </div>
+            <div class="offcanvas-body">
+              <div class="content-top">
+                <a class="offcanvas-logo" href="/">
+                  <img src="assets/images/new-logo.png" alt="logo" />
+                </a>
+                <p class="mb-0 mt-32 fw-light">
+                  Distrak Street 2SK Line, <br />
+                  Germanygalore@inside-support.com <br />
+                  (+125) 2156-2145
+                </p>
+              </div>
+              <div
+                class="offcanvas-gallery d-flex align-items-center flex-wrap"
+              >
+                <a href="#"
+                  ><img src="assets/images/gallery-1.jpg" alt="not found"
+                /></a>
+                <a href="#"
+                  ><img src="assets/images/gallery-2.jpg" alt="not found"
+                /></a>
+                <a href="#"
+                  ><img src="assets/images/gallery-3.jpg" alt="not found"
+                /></a>
+                <a href="#"
+                  ><img src="assets/images/gallery-4.jpg" alt="not found"
+                /></a>
+                <a href="#"
+                  ><img src="assets/images/gallery-5.jpg" alt="not found"
+                /></a>
+                <a href="#"
+                  ><img src="assets/images/gallery-6.jpg" alt="not found"
+                /></a>
+              </div>
+              <div class="offcanvas-newsletter">
+                <h6 class="text-center">Newsletter</h6>
+                <form action="#">
+                  <input
+                    type="email"
+                    placeholder="Enter your e-mail"
+                    class="form-control"
+                  />
+                  <a class="template-btn primary-btn" href="#">SUBSCRIBE NOW</a>
+                </form>
+              </div>
+              <div
+                class="offcanvas-bottom d-flex align-items-center justify-content-between"
+              >
+                <div class="language-switcher">
+                  <div class="dropdown">
+                    <button
+                      type="button"
+                      class="btn dropdown-toggle"
+                      data-bs-toggle="dropdown"
+                    >
+                      <img src="assets/images/flag-usa.png" alt="flag" />
+                      English
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a href="#"
+                          ><img src="assets/images/flag-bd.jpg" alt="flag" />
+                          Bangla</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#"
+                          ><img src="assets/images/flag-india.jpg" alt="flag" />
+                          Hindi</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="user-links">
+                  <a href="login.html" class="text-uppercase fw-bold fs-sm"
+                    >Contact Us</a
                   >
-                </li>
-                <li>
-                  <a href="#"
-                    ><img src="assets/images/flag-india.jpg" alt="flag" />
-                    Hindi</a
-                  >
-                </li>
-              </ul>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="user-links">
-            <a href="login.html" class="text-uppercase fw-bold fs-sm"
-              >Contact Us</a
-            >
-          </div>
         </div>
       </div>
-    </div>
+    </section>
     <!--Mobile menu with Offcanvas-->
     <div
       class="offcanvas offcanvas-mobile offcanvas-start"
@@ -377,17 +385,35 @@
       <div class="container">
         <div class="content-wrapper">
           <div class="left">
-            <a class="sub-title text-white" href="#"
+            <a
+              class="sub-title-white wow animate__animated animate__fadeInDown"
+              href="#"
               >50% discount on earlly purchase</a
             >
-            <h1 class="title text-white">Creating the best digital solution</h1>
-            <p class="description text-white">
+            <h1
+              class="title text-white wow animate__animated animate__fadeInUp"
+              data-wow-delay="0.2s"
+            >
+              Creating the best digital solution
+            </h1>
+            <p
+              class="description text-white wow animate__animated animate__fadeInUp"
+              data-wow-delay="0.3s"
+            >
               Malesuada curabitur nascetur viverra sem pulvinar feugiat curae,
               posuere risus consequat velit bibendum at integer
             </p>
             <div class="btn-wrapper">
-              <a class="template-btn white-btn" href="#">learn more</a>
-              <a class="template-btn border-btn" href="#"
+              <a
+                class="template-btn white-btn wow animate__animated animate__fadeInUp"
+                data-wow-delay="0.4s"
+                href="#"
+                >learn more</a
+              >
+              <a
+                class="template-btn border-btn wow animate__animated animate__fadeInUp"
+                data-wow-delay="0.5s"
+                href="#"
                 >get started
                 <span class="icon">
                   <i class="fa-solid fa-arrow-right"></i>
@@ -414,27 +440,36 @@
             <div class="img-wrapper">
               <img src="assets/images/ab-1.jpg" alt="" />
             </div>
-            <div class="award-box">
+            <div class="award-box wow animate__animated animate__fadeInUp">
               <h6>We are since 2002! Over 200 Awards</h6>
             </div>
           </div>
           <div class="right">
-            <div class="sub">
+            <div class="sub wow animate__animated animate__fadeInUp">
               <a href="#">50% discount on early purchase</a>
             </div>
-            <h2 class="title">
+            <h2
+              class="title wow animate__animated animate__fadeInUp"
+              data-wow-delay="0.2s"
+            >
               We create digital Ideas that are
               <span class="primary-bg-light primary-text-color">bigger</span>
             </h2>
             <div class="des-wrapper">
-              <p>
+              <p
+                class="wow animate__animated animate__fadeInUp"
+                data-wow-delay="0.3s"
+              >
                 Leo in taciti conubia, arcu dapibus convallis commodo. Bibendum
                 tristique lacus aenean quisque ut
                 <span class="primary-text-color ft-600"
                   >primis torquent dis eget</span
                 >
               </p>
-              <div class="icon-text">
+              <div
+                class="icon-text wow animate__animated animate__fadeInUp"
+                data-wow-delay="0.4s"
+              >
                 <img src="assets/images/ab-2.jpg" alt="" />
                 <p>
                   Leo in taciti conubia, arcu dapibus convallis commodo sour
@@ -444,8 +479,18 @@
               </div>
             </div>
             <div class="btn-wrapper">
-              <a class="template-btn primary-btn" href="#">more about us</a>
-              <a class="template-btn secondery-btn" href="#">get started</a>
+              <a
+                class="template-btn primary-btn wow animate__animated animate__fadeInUp"
+                data-wow-delay="0.2s"
+                href="#"
+                >more about us</a
+              >
+              <a
+                class="template-btn secondery-btn wow animate__animated animate__fadeInUp"
+                data-wow-delay="0.3s"
+                href="#"
+                >get started</a
+              >
             </div>
           </div>
         </div>
@@ -460,17 +505,27 @@
       <div class="container">
         <div class="content-wrapper">
           <div class="title-wrapper">
-            <a class="fw-600" href="#">50% discount on early purchase</a>
-            <h2 class="title text-white">Our Service Area</h2>
-            <p class="fw-semibold">
+            <a class="fw-600 wow animate__animated animate__fadeInUp" href="#"
+              >50% discount on early purchase</a
+            >
+            <h2
+              class="title text-white wow animate__animated animate__fadeInUp"
+              data-wow-delay="0.2s"
+            >
+              Our Service Area
+            </h2>
+            <p
+              class="fw-semibold wow animate__animated animate__fadeInUp"
+              data-wow-delay="0.3s"
+            >
               There are many variations of passages of Lorem Ipsum available,
               but the majority have suffered alteration, by injected humour.
             </p>
           </div>
           <div class="service-inner-wrapper">
-            <div class="inner">
+            <div class="inner wow animate__animated animate__fadeInUp">
               <div class="icon-wrapper">
-                <img src="assets/images/icon-2.svg" alt="e2ef" />
+                <img src="assets/images/icon-1.svg" alt="e2ef" />
               </div>
               <div class="right-text">
                 <h6>Web Development</h6>
@@ -487,7 +542,10 @@
                 </a>
               </div>
             </div>
-            <div class="inner">
+            <div
+              class="inner wow animate__animated animate__fadeInUp"
+              data-wow-delay="0.2s"
+            >
               <div class="icon-wrapper">
                 <img src="assets/images/icon-2.svg" alt="e2ef" />
               </div>
@@ -506,9 +564,9 @@
                 </a>
               </div>
             </div>
-            <div class="inner">
+            <div class="inner wow animate__animated animate__fadeInUp">
               <div class="icon-wrapper">
-                <img src="assets/images/icon-2.svg" alt="e2ef" />
+                <img src="assets/images/icon-4.svg" alt="e2ef" />
               </div>
               <div class="right-text">
                 <h6>Technology Solution</h6>
@@ -525,9 +583,12 @@
                 </a>
               </div>
             </div>
-            <div class="inner">
+            <div
+              class="inner wow animate__animated animate__fadeInUp"
+              data-wow-delay="0.2s"
+            >
               <div class="icon-wrapper">
-                <img src="assets/images/icon-2.svg" alt="e2ef" />
+                <img src="assets/images/icon-3.svg" alt="e2ef" />
               </div>
               <div class="right-text">
                 <h6>Content Strategy</h6>
@@ -550,37 +611,43 @@
     </section>
     <!--**************** Ticker section start *******************-->
     <section class="ticker-area">
-      <div class="container">
-        <div class="content-wrapper">
-          <marquee behavior="" direction="">
-            <span class="icon"> <i class="fas fa-star me-2"></i> </span>
-            WHAT WE DO
-            <span class="icon"> <i class="fas fa-star me-2"></i> </span>
-            WE LOVE TO WORK WITH
-            <span class="icon"> <i class="fas fa-star me-2"></i> </span>
-            WE DO AGENCY
-            <span class="icon"> <i class="fas fa-star me-2"></i> </span>
-            WE DO AGENCY SOLUTION
-            <span class="icon"> <i class="fas fa-star me-2"></i> </span>
-            WHAT WE LOVE TO WORK WITH
-          </marquee>
-        </div>
+      <div class="content-wrapper">
+        <marquee behavior="" direction="">
+          <span class="icon"> <i class="fas fa-star me-2"></i> </span>
+          WHAT WE DO
+          <span class="icon"> <i class="fas fa-star me-2"></i> </span>
+          WE LOVE TO WORK WITH
+          <span class="icon"> <i class="fas fa-star me-2"></i> </span>
+          WE DO AGENCY
+          <span class="icon"> <i class="fas fa-star me-2"></i> </span>
+          WE DO AGENCY SOLUTION
+          <span class="icon"> <i class="fas fa-star me-2"></i> </span>
+          WHAT WE LOVE TO WORK WITH
+        </marquee>
       </div>
     </section>
 
     <!-- expart section start -->
-    <section class="expart-area">
+    <section class="expart-area ptb-100">
       <div class="container">
         <div class="content-wrapper">
           <div class="left">
-            <div class="sub">
-              <a href="#">50% discount on early purchase</a>
+            <div class="sub wow animate__animated animate__fadeInUp">
+              <a class="sub-title-blue" href="#"
+                >50% discount on early purchase</a
+              >
             </div>
-            <h2 class="title">
+            <h2
+              class="title wow animate__animated animate__fadeInUp"
+              data-wow-delay="0.2s"
+            >
               Work With Our Full Time
               <span class="primary-bg-light primary-text-color">Experts</span>
             </h2>
-            <div class="des-wrapper">
+            <div
+              class="des-wrapper wow animate__animated animate__fadeInUp"
+              data-wow-delay="0.3s"
+            >
               <p>
                 Leo in taciti conubia, arcu dapibus convallis commodo. Bibendum
                 tristique lacus aenean quisque ut
@@ -588,38 +655,1173 @@
                   >primis torquent dis eget</span
                 >
               </p>
-              <div class="icon-text">
-                <img src="assets/images/ab-2.jpg" alt="" />
-                <p>
-                  Leo in taciti conubia, arcu dapibus convallis commodo sour
-                  Bibendum tristique lacus aenean quisque ut primis torquent dis
-                  eget awesome company feewdbacks
-                </p>
+            </div>
+            <div
+              class="cta-box bg-white rounded-3 theme-shadow wow animate__animated animate__animated animate__fadeInUp"
+              data-wow-delay="0.4s"
+            >
+              <div class="d-flex gap-3 flex-wrap flex-sm-nowrap">
+                <span
+                  class="icon-wrapper primary-bg-light rounded-circle d-flex align-items-center justify-content-center flex-shrink-0"
+                >
+                  <svg
+                    width="21"
+                    height="15"
+                    viewBox="0 0 21 15"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M19.8203 1.30469C20.3789 1.82031 20.3789 2.72266 19.8203 3.23828L8.82031 14.2383C8.30469 14.7969 7.40234 14.7969 6.88672 14.2383L1.38672 8.73828C0.828125 8.22266 0.828125 7.32031 1.38672 6.80469C1.90234 6.24609 2.80469 6.24609 3.32031 6.80469L7.83203 11.3164L17.8867 1.30469C18.4023 0.746094 19.3047 0.746094 19.8203 1.30469Z"
+                      fill="#5044EB"
+                    />
+                  </svg>
+                </span>
+                <div>
+                  <h6 class="mb-20">The best agency solution 2023</h6>
+                  <p class="mb-0">
+                    These tools will allow you to handle tasks such hanging sves
+                    assemble furniture
+                  </p>
+                </div>
+              </div>
+              <div class="d-flex align-items-center gap-4 mt-40 flex-wrap">
+                <a
+                  class="template-btn primary-btn wow animate__animated animate__fadeInUp"
+                  data-wow-delay="0.2s"
+                  href="/about"
+                  >Learn More</a
+                >
+                <a
+                  href="tel:2521582693"
+                  class="wow animate__animated animate__fadeInUp"
+                  data-wow-delay="0.3s"
+                >
+                  <div class="cta-call-btn d-flex align-items-center gap-2">
+                    <span class="icon-tel rounded-circle">
+                      <span
+                        class="primary-bg-color rounded-circle w-100 h-100 d-inline-flex align-items-center justify-content-center text-white"
+                      >
+                        <i class="fa-solid fa-phone"></i>
+                      </span>
+                    </span>
+                    <div>
+                      <span class="fs-sm fw-medium mb-2 d-block text-color"
+                        >Call Us 2 4/7</span
+                      >
+                      <h5 class="mb-0 fs-20">(+25) 2158.2693</h5>
+                    </div>
+                  </div>
+                </a>
               </div>
             </div>
           </div>
-          <div class="right"></div>
+          <div class="right">
+            <div class="image-hover-wrapper">
+              <img src="assets/images/team-meeting.png" alt="" />
+              <div
+                class="exp-year-box position-absolute rounded-circle wow animate__animated animate__fadeInUp"
+              >
+                <h3 class="text-white">
+                  <span class="counter-text">25</span>+
+                </h3>
+                <h6 class="mb-0 text-white fs-18">Years of Experience</h6>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Footer Section start Hare -->
-    <footer>
+    <!-- Portfolio section start -->
+    <section class="portfolio-area ptb-100">
       <div class="container">
-        <div class="content-wrapper">
-          <div class="top">
-            <div class="left"></div>
-            <div class="right"></div>
+        <div class="title-wrapper">
+          <a
+            href="#"
+            class="sub-title-blue wow animate__animated animate__fadeInUp"
+            >50% discount on early purchase</a
+          >
+          <h2
+            class="mt-4 wow animate__animated animate__fadeInUp"
+            data-wow-delay="0.2s"
+          >
+            Our Creative
+            <span class="primary-text-color primary-bg-light"> Works</span>
+          </h2>
+        </div>
+        <div class="portfolio-slider">
+          <div class="content-wrapper">
+            <div class="inner wow animate__animated animate__fadeInUp">
+              <a class="explore-btn" href="/project-details">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15.4531 1.625V12.875C15.4531 13.5312 14.9375 14 14.3281 14C13.6719 14 13.2031 13.5312 13.2031 12.875V4.34375L2.375 15.1719C2.14062 15.4062 1.85938 15.5 1.57812 15.5C1.25 15.5 0.96875 15.4062 0.78125 15.1719C0.3125 14.75 0.3125 14.0469 0.78125 13.625L11.6094 2.75H3.07812C2.42188 2.75 1.95312 2.28125 1.95312 1.625C1.95312 1.01562 2.42188 0.5 3.07812 0.5H14.3281C14.9375 0.5 15.4531 1.01562 15.4531 1.625Z"
+                    fill="white"
+                  />
+                </svg>
+              </a>
+              <img src="assets/images/pf-1.jpg" alt="" />
+              <div class="pf-content">
+                <h3 class="mb-20 text-white">Creative Business Solution</h3>
+                <p class="mb-0 fw-medium text-white">
+                  App Development, Product Design
+                </p>
+              </div>
+            </div>
+            <div
+              class="inner wow animate__animated animate__fadeInUp"
+              data-wow-delay="0.2s"
+            >
+              <a class="explore-btn" href="/project-details">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15.4531 1.625V12.875C15.4531 13.5312 14.9375 14 14.3281 14C13.6719 14 13.2031 13.5312 13.2031 12.875V4.34375L2.375 15.1719C2.14062 15.4062 1.85938 15.5 1.57812 15.5C1.25 15.5 0.96875 15.4062 0.78125 15.1719C0.3125 14.75 0.3125 14.0469 0.78125 13.625L11.6094 2.75H3.07812C2.42188 2.75 1.95312 2.28125 1.95312 1.625C1.95312 1.01562 2.42188 0.5 3.07812 0.5H14.3281C14.9375 0.5 15.4531 1.01562 15.4531 1.625Z"
+                    fill="white"
+                  />
+                </svg>
+              </a>
+              <img src="assets/images/pf-2.jpg" alt="" />
+              <div class="pf-content">
+                <h3 class="mb-20 text-white">Web Development Service</h3>
+                <p class="mb-0 fw-medium text-white">
+                  App Development, Product Design
+                </p>
+              </div>
+            </div>
+            <div
+              class="inner mini-inner wow animate__animated animate__fadeInUp"
+              data-wow-delay="0.3s"
+            >
+              <a class="explore-btn" href="/project-details">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15.4531 1.625V12.875C15.4531 13.5312 14.9375 14 14.3281 14C13.6719 14 13.2031 13.5312 13.2031 12.875V4.34375L2.375 15.1719C2.14062 15.4062 1.85938 15.5 1.57812 15.5C1.25 15.5 0.96875 15.4062 0.78125 15.1719C0.3125 14.75 0.3125 14.0469 0.78125 13.625L11.6094 2.75H3.07812C2.42188 2.75 1.95312 2.28125 1.95312 1.625C1.95312 1.01562 2.42188 0.5 3.07812 0.5H14.3281C14.9375 0.5 15.4531 1.01562 15.4531 1.625Z"
+                    fill="white"
+                  />
+                </svg>
+              </a>
+              <img src="assets/images/pf-3.jpg" alt="" />
+              <div class="pf-content">
+                <h3 class="mb-20 text-white">Shopify Theme Development</h3>
+                <p class="mb-0 fw-medium text-white">
+                  App Development, Product Design
+                </p>
+              </div>
+            </div>
+            <div
+              class="inner mini-inner wow animate__animated animate__fadeInUp"
+              data-wow-delay="0.4s"
+            >
+              <a class="explore-btn" href="/project-details">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15.4531 1.625V12.875C15.4531 13.5312 14.9375 14 14.3281 14C13.6719 14 13.2031 13.5312 13.2031 12.875V4.34375L2.375 15.1719C2.14062 15.4062 1.85938 15.5 1.57812 15.5C1.25 15.5 0.96875 15.4062 0.78125 15.1719C0.3125 14.75 0.3125 14.0469 0.78125 13.625L11.6094 2.75H3.07812C2.42188 2.75 1.95312 2.28125 1.95312 1.625C1.95312 1.01562 2.42188 0.5 3.07812 0.5H14.3281C14.9375 0.5 15.4531 1.01562 15.4531 1.625Z"
+                    fill="white"
+                  />
+                </svg>
+              </a>
+              <img src="assets/images/pf-4.jpg" alt="" />
+              <div class="pf-content">
+                <h3 class="mb-20 text-white">WordPress Theme Development</h3>
+                <p class="mb-0 fw-medium text-white">
+                  App Development, Product Design
+                </p>
+              </div>
+            </div>
+            <div
+              class="inner mini-inner wow animate__animated animate__fadeInUp"
+              data-wow-delay="0.5s"
+            >
+              <a class="explore-btn" href="/project-details">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15.4531 1.625V12.875C15.4531 13.5312 14.9375 14 14.3281 14C13.6719 14 13.2031 13.5312 13.2031 12.875V4.34375L2.375 15.1719C2.14062 15.4062 1.85938 15.5 1.57812 15.5C1.25 15.5 0.96875 15.4062 0.78125 15.1719C0.3125 14.75 0.3125 14.0469 0.78125 13.625L11.6094 2.75H3.07812C2.42188 2.75 1.95312 2.28125 1.95312 1.625C1.95312 1.01562 2.42188 0.5 3.07812 0.5H14.3281C14.9375 0.5 15.4531 1.01562 15.4531 1.625Z"
+                    fill="white"
+                  />
+                </svg>
+              </a>
+              <img src="assets/images/pf-5.jpg" alt="" />
+              <div class="pf-content">
+                <h3 class="mb-20 text-white">Custom WP Plugin Development</h3>
+                <p class="mb-0 fw-medium text-white">
+                  App Development, Product Design
+                </p>
+              </div>
+            </div>
           </div>
-          <div class="bottom"></div>
+          <div class="content-wrapper">
+            <div class="inner">
+              <a class="explore-btn" href="/project-details">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15.4531 1.625V12.875C15.4531 13.5312 14.9375 14 14.3281 14C13.6719 14 13.2031 13.5312 13.2031 12.875V4.34375L2.375 15.1719C2.14062 15.4062 1.85938 15.5 1.57812 15.5C1.25 15.5 0.96875 15.4062 0.78125 15.1719C0.3125 14.75 0.3125 14.0469 0.78125 13.625L11.6094 2.75H3.07812C2.42188 2.75 1.95312 2.28125 1.95312 1.625C1.95312 1.01562 2.42188 0.5 3.07812 0.5H14.3281C14.9375 0.5 15.4531 1.01562 15.4531 1.625Z"
+                    fill="white"
+                  />
+                </svg>
+              </a>
+              <img src="assets/images/pf-1.jpg" alt="" />
+              <div class="pf-content">
+                <h3 class="mb-20 text-white">Creative Business Solution</h3>
+                <p class="mb-0 fw-medium text-white">
+                  App Development, Product Design
+                </p>
+              </div>
+            </div>
+            <div class="inner">
+              <a class="explore-btn" href="/project-details">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15.4531 1.625V12.875C15.4531 13.5312 14.9375 14 14.3281 14C13.6719 14 13.2031 13.5312 13.2031 12.875V4.34375L2.375 15.1719C2.14062 15.4062 1.85938 15.5 1.57812 15.5C1.25 15.5 0.96875 15.4062 0.78125 15.1719C0.3125 14.75 0.3125 14.0469 0.78125 13.625L11.6094 2.75H3.07812C2.42188 2.75 1.95312 2.28125 1.95312 1.625C1.95312 1.01562 2.42188 0.5 3.07812 0.5H14.3281C14.9375 0.5 15.4531 1.01562 15.4531 1.625Z"
+                    fill="white"
+                  />
+                </svg>
+              </a>
+              <img src="assets/images/pf-2.jpg" alt="" />
+              <div class="pf-content">
+                <h3 class="mb-20 text-white">Web Development Service</h3>
+                <p class="mb-0 fw-medium text-white">
+                  App Development, Product Design
+                </p>
+              </div>
+            </div>
+            <div class="inner mini-inner">
+              <a class="explore-btn" href="/project-details">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15.4531 1.625V12.875C15.4531 13.5312 14.9375 14 14.3281 14C13.6719 14 13.2031 13.5312 13.2031 12.875V4.34375L2.375 15.1719C2.14062 15.4062 1.85938 15.5 1.57812 15.5C1.25 15.5 0.96875 15.4062 0.78125 15.1719C0.3125 14.75 0.3125 14.0469 0.78125 13.625L11.6094 2.75H3.07812C2.42188 2.75 1.95312 2.28125 1.95312 1.625C1.95312 1.01562 2.42188 0.5 3.07812 0.5H14.3281C14.9375 0.5 15.4531 1.01562 15.4531 1.625Z"
+                    fill="white"
+                  />
+                </svg>
+              </a>
+              <img src="assets/images/pf-3.jpg" alt="" />
+              <div class="pf-content">
+                <h3 class="mb-20 text-white">Shopify Theme Development</h3>
+                <p class="mb-0 fw-medium text-white">
+                  App Development, Product Design
+                </p>
+              </div>
+            </div>
+            <div class="inner mini-inner">
+              <a class="explore-btn" href="/project-details">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15.4531 1.625V12.875C15.4531 13.5312 14.9375 14 14.3281 14C13.6719 14 13.2031 13.5312 13.2031 12.875V4.34375L2.375 15.1719C2.14062 15.4062 1.85938 15.5 1.57812 15.5C1.25 15.5 0.96875 15.4062 0.78125 15.1719C0.3125 14.75 0.3125 14.0469 0.78125 13.625L11.6094 2.75H3.07812C2.42188 2.75 1.95312 2.28125 1.95312 1.625C1.95312 1.01562 2.42188 0.5 3.07812 0.5H14.3281C14.9375 0.5 15.4531 1.01562 15.4531 1.625Z"
+                    fill="white"
+                  />
+                </svg>
+              </a>
+              <img src="assets/images/pf-4.jpg" alt="" />
+              <div class="pf-content">
+                <h3 class="mb-20 text-white">WordPress Theme Development</h3>
+                <p class="mb-0 fw-medium text-white">
+                  App Development, Product Design
+                </p>
+              </div>
+            </div>
+            <div class="inner mini-inner">
+              <a class="explore-btn" href="/project-details">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15.4531 1.625V12.875C15.4531 13.5312 14.9375 14 14.3281 14C13.6719 14 13.2031 13.5312 13.2031 12.875V4.34375L2.375 15.1719C2.14062 15.4062 1.85938 15.5 1.57812 15.5C1.25 15.5 0.96875 15.4062 0.78125 15.1719C0.3125 14.75 0.3125 14.0469 0.78125 13.625L11.6094 2.75H3.07812C2.42188 2.75 1.95312 2.28125 1.95312 1.625C1.95312 1.01562 2.42188 0.5 3.07812 0.5H14.3281C14.9375 0.5 15.4531 1.01562 15.4531 1.625Z"
+                    fill="white"
+                  />
+                </svg>
+              </a>
+              <img src="assets/images/pf-5.jpg" alt="" />
+              <div class="pf-content">
+                <h3 class="mb-20 text-white">Custom WP Plugin Development</h3>
+                <p class="mb-0 fw-medium text-white">
+                  App Development, Product Design
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="content-wrapper">
+            <div class="inner">
+              <a class="explore-btn" href="/project-details">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15.4531 1.625V12.875C15.4531 13.5312 14.9375 14 14.3281 14C13.6719 14 13.2031 13.5312 13.2031 12.875V4.34375L2.375 15.1719C2.14062 15.4062 1.85938 15.5 1.57812 15.5C1.25 15.5 0.96875 15.4062 0.78125 15.1719C0.3125 14.75 0.3125 14.0469 0.78125 13.625L11.6094 2.75H3.07812C2.42188 2.75 1.95312 2.28125 1.95312 1.625C1.95312 1.01562 2.42188 0.5 3.07812 0.5H14.3281C14.9375 0.5 15.4531 1.01562 15.4531 1.625Z"
+                    fill="white"
+                  />
+                </svg>
+              </a>
+              <img src="assets/images/pf-1.jpg" alt="" />
+              <div class="pf-content">
+                <h3 class="mb-20 text-white">Creative Business Solution</h3>
+                <p class="mb-0 fw-medium text-white">
+                  App Development, Product Design
+                </p>
+              </div>
+            </div>
+            <div class="inner">
+              <a class="explore-btn" href="/project-details">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15.4531 1.625V12.875C15.4531 13.5312 14.9375 14 14.3281 14C13.6719 14 13.2031 13.5312 13.2031 12.875V4.34375L2.375 15.1719C2.14062 15.4062 1.85938 15.5 1.57812 15.5C1.25 15.5 0.96875 15.4062 0.78125 15.1719C0.3125 14.75 0.3125 14.0469 0.78125 13.625L11.6094 2.75H3.07812C2.42188 2.75 1.95312 2.28125 1.95312 1.625C1.95312 1.01562 2.42188 0.5 3.07812 0.5H14.3281C14.9375 0.5 15.4531 1.01562 15.4531 1.625Z"
+                    fill="white"
+                  />
+                </svg>
+              </a>
+              <img src="assets/images/pf-2.jpg" alt="" />
+              <div class="pf-content">
+                <h3 class="mb-20 text-white">Web Development Service</h3>
+                <p class="mb-0 fw-medium text-white">
+                  App Development, Product Design
+                </p>
+              </div>
+            </div>
+            <div class="inner mini-inner">
+              <a class="explore-btn" href="/project-details">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15.4531 1.625V12.875C15.4531 13.5312 14.9375 14 14.3281 14C13.6719 14 13.2031 13.5312 13.2031 12.875V4.34375L2.375 15.1719C2.14062 15.4062 1.85938 15.5 1.57812 15.5C1.25 15.5 0.96875 15.4062 0.78125 15.1719C0.3125 14.75 0.3125 14.0469 0.78125 13.625L11.6094 2.75H3.07812C2.42188 2.75 1.95312 2.28125 1.95312 1.625C1.95312 1.01562 2.42188 0.5 3.07812 0.5H14.3281C14.9375 0.5 15.4531 1.01562 15.4531 1.625Z"
+                    fill="white"
+                  />
+                </svg>
+              </a>
+              <img src="assets/images/pf-3.jpg" alt="" />
+              <div class="pf-content">
+                <h3 class="mb-20 text-white">Shopify Theme Development</h3>
+                <p class="mb-0 fw-medium text-white">
+                  App Development, Product Design
+                </p>
+              </div>
+            </div>
+            <div class="inner mini-inner">
+              <a class="explore-btn" href="/project-details">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15.4531 1.625V12.875C15.4531 13.5312 14.9375 14 14.3281 14C13.6719 14 13.2031 13.5312 13.2031 12.875V4.34375L2.375 15.1719C2.14062 15.4062 1.85938 15.5 1.57812 15.5C1.25 15.5 0.96875 15.4062 0.78125 15.1719C0.3125 14.75 0.3125 14.0469 0.78125 13.625L11.6094 2.75H3.07812C2.42188 2.75 1.95312 2.28125 1.95312 1.625C1.95312 1.01562 2.42188 0.5 3.07812 0.5H14.3281C14.9375 0.5 15.4531 1.01562 15.4531 1.625Z"
+                    fill="white"
+                  />
+                </svg>
+              </a>
+              <img src="assets/images/pf-4.jpg" alt="" />
+              <div class="pf-content">
+                <h3 class="mb-20 text-white">WordPress Theme Development</h3>
+                <p class="mb-0 fw-medium text-white">
+                  App Development, Product Design
+                </p>
+              </div>
+            </div>
+            <div class="inner mini-inner">
+              <a class="explore-btn" href="/project-details">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15.4531 1.625V12.875C15.4531 13.5312 14.9375 14 14.3281 14C13.6719 14 13.2031 13.5312 13.2031 12.875V4.34375L2.375 15.1719C2.14062 15.4062 1.85938 15.5 1.57812 15.5C1.25 15.5 0.96875 15.4062 0.78125 15.1719C0.3125 14.75 0.3125 14.0469 0.78125 13.625L11.6094 2.75H3.07812C2.42188 2.75 1.95312 2.28125 1.95312 1.625C1.95312 1.01562 2.42188 0.5 3.07812 0.5H14.3281C14.9375 0.5 15.4531 1.01562 15.4531 1.625Z"
+                    fill="white"
+                  />
+                </svg>
+              </a>
+              <img src="assets/images/pf-5.jpg" alt="" />
+              <div class="pf-content">
+                <h3 class="mb-20 text-white">Custom WP Plugin Development</h3>
+                <p class="mb-0 fw-medium text-white">
+                  App Development, Product Design
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+    </section>
+
+    <!--feedback section start-->
+    <section
+      class="feedback-section ptb-100 dark-bg-color position-relative z-1 overflow-hidden"
+    >
+      <span class="circle-shape-1 position-absolute z--1"></span>
+      <span class="circle-shape-2 position-absolute z--1"></span>
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-6">
+            <div class="section-title">
+              <span
+                class="sub-title-white wow animate__animated animate__fadeInUp position-relative"
+                >Our Testimonial</span
+              >
+              <h2
+                class="mb-0 text-white mt-4 wow animate__animated animate__fadeInUp"
+                data-wow-delay="0.2s"
+              >
+                Customer Feedbacks
+              </h2>
+            </div>
+          </div>
+        </div>
+        <div class="feedback-slider mt-60 slider-spacing">
+          <div class="slide-single">
+            <div class="feedback-single bg-white">
+              <img
+                src="assets/images/quote-1.svg"
+                alt="quote"
+                class="img-fluid align-self-start quete-icon"
+              />
+              <div class="feedback-content">
+                <h3 class="fw-medium mb-0 clients-comment">
+                  “Penatibus etlectus quis sapien nibh fringilla varius elemenm
+                  blandit dui miestulum pretium cursusa augue praesent proin
+                  justo netus tar vestibulum taciti fringilla ultrices donec
+                  netus luctus mus sapien turpis varius libero lines”
+                </h3>
+                <div class="spacer mt-50 mb-40"></div>
+                <div class="d-flex align-items-center gap-3">
+                  <img
+                    src="assets/images/client-1.png"
+                    alt="client"
+                    class="img-fluid rounded-circle flex-shrink-0"
+                  />
+                  <div>
+                    <h6 class="fw-semibold mb-1">Andrew Smith</h6>
+                    <span class="fw-medium">COO at Company</span>
+                  </div>
+                </div>
+              </div>
+              <img
+                src="assets/images/quote-2.svg"
+                alt="quote"
+                class="img-fluid align-self-end quete-icon"
+              />
+            </div>
+          </div>
+          <div class="slide-single">
+            <div class="feedback-single bg-white">
+              <img
+                src="assets/images/quote-1.svg"
+                alt="quote"
+                class="img-fluid align-self-start quete-icon"
+              />
+              <div class="feedback-content">
+                <h3 class="fw-medium mb-0 clients-comment">
+                  “Penatibus etlectus quis sapien nibh fringilla varius elemenm
+                  blandit dui miestulum pretium cursusa augue praesent proin
+                  justo netus tar vestibulum taciti fringilla ultrices donec
+                  netus luctus mus sapien turpis varius libero lines”
+                </h3>
+                <div class="spacer mt-50 mb-40"></div>
+                <div class="d-flex align-items-center gap-3">
+                  <img
+                    src="assets/images/client-2.jpg"
+                    alt="client"
+                    class="img-fluid rounded-circle flex-shrink-0"
+                  />
+                  <div>
+                    <h6 class="fw-semibold mb-1">Jhon Doe</h6>
+                    <span class="fw-medium">COO at Company</span>
+                  </div>
+                </div>
+              </div>
+              <img
+                src="assets/images/quote-2.svg"
+                alt="quote"
+                class="img-fluid align-self-end quete-icon"
+              />
+            </div>
+          </div>
+          <div class="slide-single">
+            <div class="feedback-single bg-white">
+              <img
+                src="assets/images/quote-1.svg"
+                alt="quote"
+                class="img-fluid align-self-start quete-icon"
+              />
+              <div class="feedback-content">
+                <h3 class="fw-medium mb-0 clients-comment">
+                  “Penatibus etlectus quis sapien nibh fringilla varius elemenm
+                  blandit dui miestulum pretium cursusa augue praesent proin
+                  justo netus tar vestibulum taciti fringilla ultrices donec
+                  netus luctus mus sapien turpis varius libero lines”
+                </h3>
+                <div class="spacer mt-50 mb-40"></div>
+                <div class="d-flex align-items-center gap-3">
+                  <img
+                    src="assets/images/client-3.jpg"
+                    alt="client"
+                    class="img-fluid rounded-circle flex-shrink-0"
+                  />
+                  <div>
+                    <h6 class="fw-semibold mb-1">Faky Lak</h6>
+                    <span class="fw-medium">COO at Company</span>
+                  </div>
+                </div>
+              </div>
+              <img
+                src="assets/images/quote-2.svg"
+                alt="quote"
+                class="img-fluid align-self-end quete-icon"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--feedback section end-->
+    <!--pricing section start-->
+    <section class="pricing-section ptb-100 bg-white">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-xl-6">
+            <div class="text-center">
+              <span
+                class="sub-title-blue osition-relative fw-semibold primary-text-color d-inline-block wow animate__animated animate__fadeInUp"
+                >Pricing Plan</span
+              >
+              <h2
+                class="mt-4 mb-0 wow animate__animated animate__fadeInUp"
+                data-wow-delay="0.2s"
+              >
+                Find the Right
+                <span class="primary-text-color px-2 primary-bg-light"
+                  >Plan</span
+                >
+              </h2>
+            </div>
+          </div>
+        </div>
+        <div class="row g-4 mt-5 justify-content-center">
+          <div class="col-xl-4 col-md-6">
+            <div
+              class="pricing-box text-center wow animate__animated animate__animated animate__fadeInUp"
+              data-wow-delay="0.3s"
+            >
+              <h3 class="fw-medium">Professional.</h3>
+              <span class="fw-medium d-block mb-32 subtitle"
+                >A beautiful, simple website.</span
+              >
+              <span class="package-icon rounded-circle bg-white">
+                <img
+                  src="assets/images/lamp.png"
+                  alt="lamp"
+                  class="img-fluid"
+                />
+              </span>
+              <div class="pricing-box-content">
+                <h6 class="h2 pricing-title">
+                  $15.99 <span class="fs-md fw-medium">/monthly</span>
+                </h6>
+                <div class="spacer mt-4 mb-32"></div>
+                <ul class="pricing-features text-start">
+                  <li>
+                    <span class="me-2"><i class="far fa-check-circle"></i></span
+                    >6 Pages Website
+                  </li>
+                  <li>
+                    <span class="me-2"><i class="far fa-check-circle"></i></span
+                    >4 PPC Campaigns
+                  </li>
+                  <li>
+                    <span class="me-2"><i class="far fa-check-circle"></i></span
+                    >12 SEO Keywords
+                  </li>
+                  <li>
+                    <span class="me-2"><i class="far fa-check-circle"></i></span
+                    >4 Facebook Campaigns
+                  </li>
+                  <li>
+                    <span class="me-2"><i class="far fa-check-circle"></i></span
+                    >3 Video Campaigns
+                  </li>
+                </ul>
+                <a href="#" class="template-btn secondery-btn mt-40 w-100"
+                  >Get Started</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-6">
+            <div
+              class="pricing-box text-center wow animate__animated animate__animated animate__animate__animated animate__fadeInUp"
+              data-wow-delay="0.35s"
+            >
+              <h3 class="fw-medium">EnterPrise.</h3>
+              <span class="fw-medium d-block mb-32 subtitle"
+                >A beautiful, simple website.</span
+              >
+              <span class="package-icon rounded-circle bg-white">
+                <img
+                  src="assets/images/lamp.png"
+                  alt="lamp"
+                  class="img-fluid"
+                />
+              </span>
+              <div class="pricing-box-content">
+                <h6 class="h2 pricing-title">
+                  $21.99 <span class="fs-md fw-medium">/monthly</span>
+                </h6>
+                <div class="spacer mt-4 mb-32"></div>
+                <ul class="pricing-features text-start">
+                  <li>
+                    <span class="me-2"><i class="far fa-check-circle"></i></span
+                    >8 Pages Website
+                  </li>
+                  <li>
+                    <span class="me-2"><i class="far fa-check-circle"></i></span
+                    >4 PPC Campaigns
+                  </li>
+                  <li>
+                    <span class="me-2"><i class="far fa-check-circle"></i></span
+                    >12 SEO Keywords
+                  </li>
+                  <li>
+                    <span class="me-2"><i class="far fa-check-circle"></i></span
+                    >4 Facebook Campaigns
+                  </li>
+                  <li>
+                    <span class="me-2"><i class="far fa-check-circle"></i></span
+                    >3 Video Campaigns
+                  </li>
+                </ul>
+                <a href="#" class="template-btn secondery-btn mt-40 w-100"
+                  >Get Started</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-6">
+            <div
+              class="pricing-box text-center wow animate__animated animate__animated animate__fadeInUp"
+              data-wow-delay="0.4s"
+            >
+              <h3 class="fw-medium">Business.</h3>
+              <span class="fw-medium d-block mb-32 subtitle"
+                >A beautiful, simple website.</span
+              >
+              <span class="package-icon rounded-circle bg-white">
+                <img
+                  src="assets/images/lamp.png"
+                  alt="lamp"
+                  class="img-fluid"
+                />
+              </span>
+              <div class="pricing-box-content">
+                <h6 class="h2 pricing-title">
+                  $33.99 <span class="fs-md fw-medium">/monthly</span>
+                </h6>
+                <div class="spacer mt-4 mb-32"></div>
+                <ul class="pricing-features text-start">
+                  <li>
+                    <span class="me-2"><i class="far fa-check-circle"></i></span
+                    >12 Pages Website
+                  </li>
+                  <li>
+                    <span class="me-2"><i class="far fa-check-circle"></i></span
+                    >4 PPC Campaigns
+                  </li>
+                  <li>
+                    <span class="me-2"><i class="far fa-check-circle"></i></span
+                    >12 SEO Keywords
+                  </li>
+                  <li>
+                    <span class="me-2"><i class="far fa-check-circle"></i></span
+                    >4 Facebook Campaigns
+                  </li>
+                  <li>
+                    <span class="me-2"><i class="far fa-check-circle"></i></span
+                    >3 Video Campaigns
+                  </li>
+                </ul>
+                <a href="#" class="template-btn secondery-btn mt-40 w-100"
+                  >Get Started</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--pricing section end-->
+
+    <!--contact section start-->
+    <section
+      class="contact-section dark-bg-color ptb-100 position-relative z-1 overflow-hidden"
+    >
+      <span class="circle-shape position-absolute z--1 rounded-circle"></span>
+      <span class="circle-shape-2 position-absolute z--1 rounded-circle"></span>
+      <span class="circle-shape-3 position-absolute z--1 rounded-circle"></span>
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-xl-6">
+            <div class="contact-info">
+              <span
+                class="sub-title-white position-relative fw-semibold d-inline-block wow animate__animated animate__fadeInUp"
+                >100% discount on early purchase</span
+              >
+              <h2
+                class="mb-4 mt-4 text-white wow animate__animated animate__fadeInDown"
+                data-wow-delay="0.2s"
+              >
+                Let's Work Together
+              </h2>
+              <p
+                class="lead fw-medium wow animate__animated animate__fadeInUp"
+                data-wow-delay="0.3s"
+              >
+                Interdum condimentum congue conubia netus neque lentesque
+                curabitur etiam nisl montes, gravida luctus nec morbi dignissim
+                ridiculus nam hendrerit ullamcorper, euismod
+              </p>
+              <ul class="contact-info-list mt-5">
+                <li
+                  class="d-flex align-items-center gap-4 wow animate__animated animate__fadeInUp"
+                  data-wow-delay="0.1s"
+                >
+                  <span
+                    class="icon d-inline-flex align-items-center justify-content-center rounded-circle bg-white flex-shrink-0"
+                  >
+                    <img
+                      src="assets/images/mail.svg"
+                      alt="mail"
+                      class="img-fluid"
+                    />
+                  </span>
+                  <div>
+                    <span class="fw-medium fs-xl">Mail Us</span>
+                    <a href="mailto:info@example.com"
+                      ><h6 class="mb-0 text-white fw-semibold mt-1">
+                        info@example.com
+                      </h6></a
+                    >
+                  </div>
+                </li>
+                <li
+                  class="d-flex align-items-center gap-4 wow animate__animated animate__fadeInUp"
+                  data-wow-delay="0.2s"
+                >
+                  <span
+                    class="icon d-inline-flex align-items-center justify-content-center rounded-circle bg-white flex-shrink-0"
+                  >
+                    <img
+                      src="assets/images/phone.svg"
+                      alt="mail"
+                      class="img-fluid"
+                    />
+                  </span>
+                  <div>
+                    <span class="fw-medium fs-xl">Cal Us</span>
+                    <a href="tel:0045611227890"
+                      ><h6 class="mb-0 text-white fw-semibold mt-1">
+                        (00) 456 1122 7890
+                      </h6></a
+                    >
+                  </div>
+                </li>
+                <li
+                  class="d-flex align-items-center gap-4 wow animate__animated animate__fadeInUp"
+                  data-wow-delay="0.3s"
+                >
+                  <span
+                    class="icon d-inline-flex align-items-center justify-content-center rounded-circle bg-white flex-shrink-0"
+                  >
+                    <img
+                      src="assets/images/location.svg"
+                      alt="mail"
+                      class="img-fluid"
+                    />
+                  </span>
+                  <div>
+                    <span class="fw-medium fs-xl">Address</span>
+                    <h6 class="mb-0 text-white fw-semibold mt-1">
+                      214 Berlin, Germany
+                    </h6>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xl-6">
+            <div class="contact-form-box bg-white">
+              <h3 class="mb-32">
+                Get a free
+                <span class="primary-bg-light primary-text-color px-2"
+                  >quote now</span
+                >
+              </h3>
+              <form class="contact-form">
+                <label>
+                  Name*
+                  <input
+                    type="text"
+                    placeholder="Jhon Smith"
+                    class="theme-input mt-2"
+                  />
+                </label>
+                <label>
+                  Email*
+                  <input
+                    type="email"
+                    placeholder="info@example.com"
+                    class="theme-input mt-2"
+                  />
+                </label>
+                <label>
+                  How can we help you?*
+                  <textarea
+                    class="theme-input mt-2"
+                    placeholder="Type your message here..."
+                    rows="4"
+                  ></textarea>
+                </label>
+                <button type="submit" class="template-btn primary-btn">
+                  Submit Message
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--contact section end-->
+
+    <!--blog section start-->
+    <section class="blog-section ptb-100">
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col-xl-6 col-lg-8">
+            <div class="section-title">
+              <span
+                class="sub-title-blue position-relative fw-semibold primary-text-color d-inline-block wow animate__animated animate__fadeInUp"
+                >News & Updates</span
+              >
+              <h2
+                class="mb-0 mt-4 wow animate__animated animate__fadeInUp"
+                data-wow-delay="0.2s"
+              >
+                Recent Blog<span
+                  class="px-1 ms-2 primary-bg-light primary-text-color"
+                  >Updates</span
+                >
+              </h2>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4">
+            <div class="text-end d-none d-lg-block">
+              <a class="template-btn secondery-btn" href="/blog-list"
+                >View All Posts</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="row mt-5 g-4">
+          <div class="col-lg-6">
+            <article
+              class="article-card position-relative wow animate__animated animate__fadeInUp"
+            >
+              <span class="overlay-bg position-absolute"></span>
+              <div class="feature-image overflow-hidden">
+                <a href="/blog-single"
+                  ><img
+                    src="assets/images/blog-1.jpg"
+                    alt="not found"
+                    class="img-fluid"
+                /></a>
+              </div>
+              <div class="card-content-wrapper bg-white">
+                <div
+                  class="blog-meta d-flex align-items-center gap-4 mb-4 flex-wrap"
+                >
+                  <span class="date fw-medium"
+                    ><i
+                      class="fa-regular fa-calendar-days me-2 primary-text-color"
+                    ></i
+                    >March 15, 2023</span
+                  >
+                  <span class="tags fw-medium"
+                    ><i class="fa-solid fa-tags me-2 primary-text-color"></i
+                    >Agency Solution</span
+                  >
+                </div>
+                <a href="/blog-single"
+                  ><h3 class="mb-4 title fw-semibold">
+                    The aim of creative agency mainly deliver innovative
+                    solutions
+                  </h3></a
+                >
+                <p class="mb-32 description">
+                  Vel morbi proin class nisl fringilla nascetur primis, odio
+                  sociis eget sapien est venenatis mattis tristique, condimentum
+                  lectus cursus ultricies aptent bibendum. Per litora libero
+                </p>
+                <a class="explore-btn" href="/blog-single"
+                  >Learn More<span class="ms-2"
+                    ><i class="fa-solid fa-arrow-right"></i></span
+                ></a>
+              </div>
+            </article>
+          </div>
+          <div class="col-lg-6">
+            <article
+              class="article-card position-relative wow animate__animated animate__fadeInUp"
+              data-wow-delay="0.2s"
+            >
+              <span class="overlay-bg position-absolute"></span>
+              <div class="feature-image overflow-hidden">
+                <a href="/blog-single"
+                  ><img
+                    src="assets/images/blog-2.jpg"
+                    alt="not found"
+                    class="img-fluid"
+                /></a>
+              </div>
+              <div class="card-content-wrapper bg-white">
+                <div
+                  class="blog-meta d-flex align-items-center gap-4 mb-4 flex-wrap"
+                >
+                  <span class="date fw-medium"
+                    ><i
+                      class="fa-regular fa-calendar-days me-2 primary-text-color"
+                    ></i
+                    >March 15, 2023</span
+                  >
+                  <span class="tags fw-medium"
+                    ><i class="fa-solid fa-tags me-2 primary-text-color"></i
+                    >Agency Solution</span
+                  >
+                </div>
+                <a href="/blog-single"
+                  ><h3 class="mb-4 title fw-semibold">
+                    The aim of creative agency mainly deliver innovative
+                    solutions
+                  </h3></a
+                >
+                <p class="mb-32 description">
+                  Vel morbi proin class nisl fringilla nascetur primis, odio
+                  sociis eget sapien est venenatis mattis tristique, condimentum
+                  lectus cursus ultricies aptent bibendum. Per litora libero
+                </p>
+                <a class="explore-btn" href="/blog-single"
+                  >Learn More<span class="ms-2"
+                    ><i class="fa-solid fa-arrow-right"></i></span
+                ></a>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="text-center mt-5 d-lg-none">
+          <a
+            class="template-btn secondery-btn wow animate__animated animate__fadeInUp"
+            href="/blog-list"
+            >View All Posts</a
+          >
+        </div>
+      </div>
+    </section>
+    <!--blog section end-->
+
+    <!--footer section start-->
+    <footer class="footer-section pt-100 position-relative z-1 overflow-hidden">
+      <div class="footer-top">
+        <div class="container position-relative z-1">
+          <span class="rectangle-shape-1 position-absolute z--1"></span>
+          <span class="rectangle-shape-2 position-absolute z--1"></span>
+          <div class="row justify-content-center mb-100">
+            <div class="col-xl-7">
+              <div class="text-center">
+                <h2 class="text-white mb-4">Have a Project in Mind?</h2>
+                <p class="mb-32">
+                  Luctus sapien pellentesque arcu fermentum accumsan tempus nam
+                  facilisis ullamcorper,
+                </p>
+                <a class="template-btn primary-btn" href="/appointment"
+                  >Get Started</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom pt-100">
+        <div class="container position-relative z-1">
+          <div class="row g-4">
+            <div class="col-xl-3 col-lg-4">
+              <div class="footer-widget text-widget">
+                <img
+                  src="assets/images/logo-white.png"
+                  alt="logo"
+                  class="img-fluid"
+                />
+                <p class="my-32 text-white">
+                  Tempus nula rhoncus euismod curae masa cras justo quisque
+                  semper usto molestie primis porttitor
+                </p>
+                <div class="footer-social">
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-linkedin"></i></a>
+                  <a href="#"><i class="fab fa-skype"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-2 col-lg-4">
+              <div class="footer-widget nav-widget">
+                <h6 class="widget-title">Company</h6>
+                <ul class="footer-links">
+                  <li><a href="#">Help Center</a></li>
+                  <li><a href="#">Terms & Conditions</a></li>
+                  <li><a href="#">Privacy Policy</a></li>
+                  <li><a href="/contact">Contact Us</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-4">
+              <div class="footer-widget schedule-widget">
+                <h6 class="widget-title">Working Time</h6>
+                <ul class="schedule-list">
+                  <li>Mon - Fri: 9:00 AM - 5:00 PM</li>
+                  <li>Saturday: 10:00 AM - 6:00 PM</li>
+                  <li>Sunday Closed</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4">
+              <div class="footer-widget footer-newsletter">
+                <h6 class="widget-title">Sign up for the newsletter</h6>
+                <form>
+                  <div class="newsletter-form d-flex align-items-center">
+                    <input
+                      type="email"
+                      placeholder="Email address"
+                      class="theme-input"
+                    />
+                    <button type="submit" class="template-btn primary-btn">
+                      Sign Up
+                    </button>
+                  </div>
+                  <label class="text-white mt-4">
+                    <span class="me-2 d-inline-block">
+                      <input type="checkbox" />
+                      <span><i class="fas fa-check"></i></span> </span
+                    >I'm okay with getting emails and having that tracked to
+                    improve my experience
+                  </label>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright mt-60 py-4">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="copyright-text">
+                <p class="mb-0 text-white">
+                  &copy;2023 Crete. All Rights Reserved
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="copyright-links">
+                <a href="#">Security</a>
+                <a href="#">Privacy & Policy</a>
+                <a href="#">Terms & Services</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <span class="circle-shape-1 position-absolute z--1 rounded-circle"></span>
+      <span class="circle-shape-2 position-absolute z--1 rounded-circle"></span>
     </footer>
     <!-- Footer Section End Hare -->
 
     <!--Assential JS file-->
     <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/jquery.waypoints.min.js"></script>
     <script src="assets/js/all.js"></script>
+    <script src="assets/js/wow.min.js"></script>
     <script src="assets/js/bootstrap.js"></script>
     <script src="assets/js/slick.min.js"></script>
     <script src="assets/js/script.js"></script>

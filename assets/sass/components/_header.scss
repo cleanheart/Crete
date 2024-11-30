@@ -4,7 +4,8 @@ header {
   width: 100%;
   top: 0;
   left: 0;
-  z-index: 3;
+  z-index: 10;
+  transition: all 0.3s;
   .container {
     .top {
       padding: 10px 0;
@@ -155,19 +156,21 @@ header {
               }
             }
 
-            &:hover .dropdown-menu {
+            &:hover .main-dropdown-menu {
               opacity: 1 !important;
               visibility: visible !important;
               transform: translateY(0px);
+              z-index: 10;
             }
 
-            .dropdown-menu {
+            .main-dropdown-menu {
+              z-index: 10;
               opacity: 0;
               visibility: hidden;
               padding: 6px 0 6px 0;
               background: $white-color;
               position: absolute;
-              top: 100%;
+              top: 99%;
               left: 0;
               border-radius: 0;
               display: flex;
@@ -241,7 +244,22 @@ header {
       padding: 0;
     }
   }
+  ///////////////////
+  ///
 }
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  animation: 1s custom-fadeInDown;
+  .top {
+    display: none !important;
+  }
+}
+
+///////////// Header Sticky
 
 /* Offcanvas Styling */
 .offcanvas {
@@ -374,7 +392,6 @@ header {
 .offcanvas-mobile {
   width: 300px !important;
   padding-bottom: 60px;
-  // padding: 60px 24px;
 
   .offcanvas-body {
     padding: 0 24px !important;
@@ -396,7 +413,7 @@ header {
         overflow: hidden;
 
         li {
-          position: relative; // Position set for dropdown visibility
+          position: relative;
           a {
             width: 100%;
             display: flex;
