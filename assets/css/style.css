@@ -1117,8 +1117,25 @@ header {
 
 /******** mobile menu *********/
 .offcanvas-mobile {
-  width: 300px !important;
-  padding-bottom: 60px; }
+  width: 300px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: -310px;
+  background-color: #ffffff;
+  z-index: 60;
+  padding: 60px 0px;
+  overflow-y: scroll;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s; }
+  .offcanvas-mobile.active {
+    left: 0 !important; }
+  .offcanvas-mobile .offcanvas-header .close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    color: #5044eb !important; }
   .offcanvas-mobile .offcanvas-body {
     padding: 0 24px !important; }
     .offcanvas-mobile .offcanvas-body .logo {
@@ -1156,7 +1173,7 @@ header {
             color: #1f1f1f;
             padding: 10px 0;
             font-weight: 600;
-            border-bottom: 1px solid #eeeeee;
+            border-bottom: 1px solid #eceff2;
             text-transform: capitalize; }
             .offcanvas-mobile .offcanvas-body .mobile-menu ul li a .icon {
               -webkit-transform: rotate(0deg);

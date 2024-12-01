@@ -396,8 +396,29 @@ header {
 
 /******** mobile menu *********/
 .offcanvas-mobile {
-  width: 300px !important;
-  padding-bottom: 60px;
+  width: 300px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: -310px;
+  background-color: $white-color;
+  z-index: 60;
+  padding: 60px 0px;
+  overflow-y: scroll;
+  transition: $transition-base;
+
+  &.active {
+    left: 0 !important;
+  }
+
+  .offcanvas-header {
+    .close {
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      color: $primary-color !important;
+    }
+  }
 
   .offcanvas-body {
     padding: 0 24px !important;
@@ -428,7 +449,7 @@ header {
             color: $headings-color;
             padding: 10px 0;
             font-weight: 600;
-            border-bottom: 1px solid $border-color;
+            border-bottom: 1px solid $light-stroke;
             text-transform: capitalize;
 
             .icon {

@@ -158,3 +158,16 @@ $(document).on("mouseup", function (e) {
 });
 
 /////////////////////
+//6. Mobile Menu
+$(".mobile-btn").click(function () {
+  $(".offcanvas-mobile").addClass("active");
+  $("body").addClass("overflow-hidden");
+});
+
+// Close the offcanvas menu (via close button or outside click)
+$(document).click(function (e) {
+  if (!$(e.target).closest(".offcanvas-mobile, .mobile-btn").length) {
+    $(".offcanvas-mobile").removeClass("active");
+    $("body").removeClass("overflow-hidden");
+  }
+});
