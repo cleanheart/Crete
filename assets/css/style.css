@@ -396,7 +396,7 @@ p {
   color: #5044eb;
   border-bottom: 1px solid #5044eb;
   padding-bottom: 6px;
-  display: inline;
+  display: inline-block;
   color: #5044eb !important; }
 
 .sub-title-white {
@@ -404,7 +404,7 @@ p {
   color: #ffffff;
   border-bottom: 1px solid #ffffff;
   padding-bottom: 6px;
-  display: inline; }
+  display: inline-block; }
 
 .fs-md {
   font-size: 16px; }
@@ -1877,7 +1877,8 @@ header {
     .service-area .title-wrapper a {
       color: #ffffff;
       border-bottom: 1px solid #ffffff;
-      padding-bottom: 6px; }
+      padding-bottom: 6px;
+      display: inline-block; }
     .service-area .title-wrapper .title {
       margin: 1rem 0 1.5rem 0; }
   .service-area .service-inner-wrapper {

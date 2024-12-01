@@ -156,3 +156,5 @@ $(document).on("mouseup", function (e) {
     $(".offcanvus-box").removeClass("active");
   }
 });
+
+/////////////////////

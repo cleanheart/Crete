@@ -107,7 +107,7 @@
   color: $primary-color;
   border-bottom: 1px solid $primary-color;
   padding-bottom: 6px;
-  display: inline;
+  display: inline-block;
   color: $primary-color !important;
 }
 .sub-title-white {
@@ -115,7 +115,7 @@
   color: $white-color;
   border-bottom: 1px solid $white-color;
   padding-bottom: 6px;
-  display: inline;
+  display: inline-block;
 }
 .fs-md {
   font-size: 16px;
