@@ -156,10 +156,10 @@
               <a class="template-btn primary-btn" href="#">Contact Us</a>
               <button
                 type="button"
-                class="menu-toggle canvas-btn"
+                class="menu-toggle canvas-btn offcanvus-toggle"
                 data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasMenu1"
-                aria-controls="offcanvasMenu1"
+                data-bs-target="content-box"
+                aria-controls="content-box"
               >
                 <span></span>
                 <span></span>
@@ -179,111 +179,88 @@
             </div>
           </div>
         </div>
-        <!-- off canvas area -->
-    <section class="">
-      <div class="content-wrapper">
-        <div
-          class="offcanvas offcanvas-end position-fixed"
-          tabindex="-1"
-          id="offcanvasMenu1"
-          aria-labelledby="offcanvasMenu1Label"
-        >
-          <div class="offcanvas-header">
-            <a
-              href="javascript:void(0)"
-              class="offcanvas-close"
-              data-bs-dismiss="offcanvas"
-              aria-label="Close"
-            >
-              <i class="fa-solid fa-xmark"></i>
-            </a>
-          </div>
-          <div class="offcanvas-body">
-            <div class="content-top">
-              <a class="offcanvas-logo" href="/">
-                <img src="assets/images/new-logo.png" alt="logo" />
-              </a>
-              <p class="mb-0 mt-32 fw-light">
-                Distrak Street 2SK Line, <br />
-                Germanygalore@inside-support.com <br />
-                (+125) 2156-2145
-              </p>
-            </div>
-            <div class="offcanvas-gallery d-flex align-items-center flex-wrap">
-              <a href="#"
-                ><img src="assets/images/gallery-1.jpg" alt="not found"
-              /></a>
-              <a href="#"
-                ><img src="assets/images/gallery-2.jpg" alt="not found"
-              /></a>
-              <a href="#"
-                ><img src="assets/images/gallery-3.jpg" alt="not found"
-              /></a>
-              <a href="#"
-                ><img src="assets/images/gallery-4.jpg" alt="not found"
-              /></a>
-              <a href="#"
-                ><img src="assets/images/gallery-5.jpg" alt="not found"
-              /></a>
-              <a href="#"
-                ><img src="assets/images/gallery-6.jpg" alt="not found"
-              /></a>
-            </div>
-            <div class="offcanvas-newsletter">
-              <h6 class="text-center">Newsletter</h6>
-              <form action="#">
-                <input
-                  type="email"
-                  placeholder="Enter your e-mail"
-                  class="form-control"
-                />
-                <a class="template-btn primary-btn" href="#">SUBSCRIBE NOW</a>
-              </form>
-            </div>
-            <div
-              class="offcanvas-bottom d-flex align-items-center justify-content-between"
-            >
-              <div class="language-switcher">
-                <div class="dropdown">
-                  <button
-                    type="button"
-                    class="btn dropdown-toggle"
-                    data-bs-toggle="dropdown"
-                  >
-                    <img src="assets/images/flag-usa.png" alt="flag" />
-                    English
-                  </button>
-                  <ul class="dropdown-menu">
-                    <li>
-                      <a href="#"
-                        ><img src="assets/images/flag-bd.jpg" alt="flag" />
-                        Bangla</a
-                      >
-                    </li>
-                    <li>
-                      <a href="#"
-                        ><img src="assets/images/flag-india.jpg" alt="flag" />
-                        Hindi</a
-                      >
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="user-links">
-                <a href="login.html" class="text-uppercase fw-bold fs-sm"
-                  >Contact Us</a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- off canvas end -->
       </div>
     </header>
     <!-- Header Section End Hare -->
-    
+    <!--offcanvus start-->
+    <div class="offcanvus-box position-fixed bg-white">
+      <a href="javascript:void(0)" class="offcanvus-close"
+        ><i class="fa-solid fa-xmark"></i
+      ></a>
+      <div class="content-top">
+        <a class="offcanvus-logo" href="/"
+          ><img src="assets/images/new-logo.png" alt="logo"
+        /></a>
+        <p class="mb-0 mt-32 fw-light">
+          Distrak Street 2SK Line, Germanygalore@inside-support.com (+125)
+          2156-2145
+        </p>
+      </div>
+      <div class="offcanvus-gallery d-flex align-items-center flex-wrap">
+        <a href="#"
+          ><img src="assets/images/gallery-1.jpg" alt="not found"
+        /></a>
+        <a href="#"
+          ><img src="assets/images/gallery-2.jpg" alt="not found"
+        /></a>
+        <a href="#"
+          ><img src="assets/images/gallery-3.jpg" alt="not found"
+        /></a>
+        <a href="#"
+          ><img src="assets/images/gallery-4.jpg" alt="not found"
+        /></a>
+        <a href="#"
+          ><img src="assets/images/gallery-5.jpg" alt="not found"
+        /></a>
+        <a href="#"
+          ><img src="assets/images/gallery-6.jpg" alt="not found"
+        /></a>
+      </div>
+      <div class="offcanvus-newsletter">
+        <h6 class="mb-4 text-center">Newsletter</h6>
+        <form action="#">
+          <input
+            type="email"
+            placeholder="Enter your e-mail"
+            class="theme-input"
+          />
+          <button type="submit" class="template-btn primary-btn mt-3 w-100">
+            <span>SUBSCRIBE NOW</span>
+          </button>
+        </form>
+      </div>
+      <div
+        class="offcanvus-bottom d-flex align-items-center justify-content-between"
+      >
+        <div class="language-switcher">
+          <div class="dropdown">
+            <button type="button" data-bs-toggle="dropdown">
+              <img src="assets/images/flag-usa.png" alt="flag" />English
+              <span><i class="fas fa-angle-down"></i></span>
+            </button>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="#"
+                  ><img src="assets/images/flag-bd.jpg" alt="flag" />Bangla</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="assets/images/flag-india.jpg" alt="flag" />Hindi</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="user-links">
+          <a href="login.html" class="text-uppercase fw-bold fs-sm"
+            >Contact Us</a
+          >
+        </div>
+      </div>
+    </div>
+    <!--offcanvus end-->
+
     <!--Mobile menu with Offcanvas-->
     <div
       class="offcanvas offcanvas-mobile offcanvas-start"

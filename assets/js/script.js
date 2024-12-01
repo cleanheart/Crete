@@ -140,3 +140,19 @@ $(window).on("scroll", function () {
 });
 
 //////////////
+//9. Offcanvus Toggle
+$(".offcanvus-toggle").on("click", function () {
+  $(".offcanvus-box").addClass("active");
+});
+
+$(".offcanvus-close").on("click", function () {
+  $(".offcanvus-box").removeClass("active");
+});
+
+$(document).on("mouseup", function (e) {
+  var offCanvusMenu = $(".offcanvus-box");
+
+  if (!offCanvusMenu.is(e.target) && offCanvusMenu.has(e.target).length === 0) {
+    $(".offcanvus-box").removeClass("active");
+  }
+});
