@@ -159,14 +159,24 @@ $(document).on("mouseup", function (e) {
 
 /////////////////////
 //6. Mobile Menu
-$(".mobile-btn").click(function () {
+// Open the offcanvas mobile menu when the button is clicked
+$(".mobile-btn").on("click", function () {
   $(".offcanvas-mobile").addClass("active");
   $("body").addClass("overflow-hidden");
 });
 
-// Close the offcanvas menu (via close button or outside click)
-$(document).click(function (e) {
-  if (!$(e.target).closest(".offcanvas-mobile, .mobile-btn").length) {
+// Close the offcanvas mobile menu when the close button is clicked
+$(".offcanvas-mobile .close").on("click", function () {
+  $(".offcanvas-mobile").removeClass("active");
+  $("body").removeClass("overflow-hidden");
+});
+
+// Close the offcanvas mobile menu if you click outside of it (on the body)
+$(document).on("click", function (e) {
+  if (
+    !$(e.target).closest(".offcanvas-mobile").length &&
+    !$(e.target).closest(".mobile-btn").length
+  ) {
     $(".offcanvas-mobile").removeClass("active");
     $("body").removeClass("overflow-hidden");
   }
