@@ -911,7 +911,6 @@
     bottom: 30px;
     padding: 42px;
     border-radius: 25px;
-    min-height: 260px;
     transition: all 0.3s;
 
     .blog-meta {
@@ -972,14 +971,6 @@
       margin-left: 15px;
       width: calc(100% - 30px);
       box-shadow: $box-shadow;
-    }
-  }
-  &:hover {
-    .card-content-wrapper {
-      min-height: 350px;
-      .description {
-        display: inline-block;
-      }
     }
   }
 }

@@ -95,11 +95,12 @@ header {
           }
           a {
             color: $text-color;
-            padding: 0 5px;
 
             &:hover {
-              animation: 0.3s toLeftFromRight;
               color: $primary-color;
+              svg {
+                animation: 0.3s toLeftFromRight forwards;
+              }
             }
           }
         }

@@ -93,7 +93,14 @@ $(function () {
     time: 1000,
   });
   /////////
+  //8. Article Hover
+  $(".article-card").on("mouseover", function () {
+    $(this).find("p.description").slideDown();
+  });
 
+  $(".article-card").on("mouseleave", function () {
+    $(this).find("p.description").slideUp();
+  });
   //////////
 
   ////////////////
